@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "question": "What machine learning algorithm was used for LULC classification in the Indian Western Himalayan region, and what overall accuracy did it achieve?",
+    "ground_truth_answer": "Random Forest was used for LULC classification in the Indian Western Himalayan (IWH) region using Google Earth Engine on Sentinel-2 data. It achieved overall accuracies of 88.76% (2016), 87.64% (2019), and 87.78% (2022).",
+    "source_document": "01_LandSegmenter.pdf",
+    "source_pages": [1, 5, 12],
+    "category": "results"
+  },
+  {
+    "id": 2,
+    "question": "How many LULC classes were defined in the Western Himalayan study, and how many trees were used in the Random Forest model?",
+    "ground_truth_answer": "Eight LULC classes were defined in the study. The Random Forest classifier used 500 trees, and the training-to-test data split was 80/20%.",
+    "source_document": "01_LandSegmenter.pdf",
+    "source_pages": [8, 10],
+    "category": "method"
+  },
+  {
+    "id": 3,
+    "question": "What model was used to predict future LULC for 2035 in the Indian Western Himalayan region?",
+    "ground_truth_answer": "MLP-ANN-MCM (Multi-Layer Perceptron Artificial Neural Network with Markov Chain Model) was used to predict LULC for the year 2035 in the Indian Western Himalayan region.",
+    "source_document": "01_LandSegmenter.pdf",
+    "source_pages": [1, 20],
+    "category": "method"
+  },
+  {
+    "id": 4,
+    "question": "What were the land use changes observed in Berhampore, West Bengal between 2001 and 2023?",
+    "ground_truth_answer": "In Berhampore, West Bengal, built-up area grew from 20.91 sq.km to 43.85 sq.km, while vegetation declined from 91.43 sq.km to 39.30 sq.km between 2001 and 2023.",
+    "source_document": "02_LandSegmenter.pdf",
+    "source_pages": [1, 8],
+    "category": "results"
+  },
+  {
+    "id": 5,
+    "question": "What deep learning and geospatial fusion approach was used for LULC analysis in Berhampore?",
+    "ground_truth_answer": "A deep learning-geospatial fusion approach was used, combining ANN (Artificial Neural Network) with CA-Markov (Cellular Automata-Markov) model for LULC prediction to 2033 in Berhampore, West Bengal, eastern India, covering the period 2001-2023.",
+    "source_document": "02_LandSegmenter.pdf",
+    "source_pages": [1, 3],
+    "category": "method"
+  },
+  {
+    "id": 6,
+    "question": "Which ML algorithm achieved the highest accuracy for LULC classification in Sankhuwasabha, Eastern Nepal?",
+    "ground_truth_answer": "Random Forest achieved the highest accuracy in Sankhuwasabha, Eastern Nepal, with 88.73% overall accuracy and Kappa of 0.81 for Sentinel-2A data, and 84.12% overall accuracy with Kappa of 0.73 for Landsat data.",
+    "source_document": "03_LandSegmenter.pdf",
+    "source_pages": [1, 10, 15],
+    "category": "results"
+  },
+  {
+    "id": 7,
+    "question": "How did SVM and ANN compare to Random Forest for LULC classification in the Nepal study?",
+    "ground_truth_answer": "In the Nepal study, SVM achieved 72.73% accuracy for Sentinel data, while ANN achieved 72.27% accuracy for Landsat data. Both were significantly lower than Random Forest which achieved 88.73% (Sentinel-2A) and 84.12% (Landsat). Parallelepiped (PP) had the lowest accuracy.",
+    "source_document": "03_LandSegmenter.pdf",
+    "source_pages": [1, 12],
+    "category": "comparison"
+  },
+  {
+    "id": 8,
+    "question": "What satellite datasets and platform were used for multi-temporal LULC mapping in Central India?",
+    "ground_truth_answer": "Sentinel-2 and HLS (Harmonized Landsat Sentinel) datasets for 2020 were used on the Google Earth Engine (GEE) platform. ESA WorldCover 2020 was used as a reference dataset. Cloud coverage was tested at 10% and 30% thresholds.",
+    "source_document": "04_LandSegmenter.pdf",
+    "source_pages": [1, 3, 5],
+    "category": "dataset"
+  },
+  {
+    "id": 9,
+    "question": "Which classifiers were compared for LULC in Central India, and which performed best?",
+    "ground_truth_answer": "Random Forest (RF), CART (Classification and Regression Trees), SVM (Support Vector Machine), and GBT (Gradient Boosted Trees) were compared. Random Forest performed the best for LULC classification in Central India.",
+    "source_document": "04_LandSegmenter.pdf",
+    "source_pages": [1, 6],
+    "category": "comparison"
+  },
+  {
+    "id": 10,
+    "question": "What satellite sensor was used for LULC mapping on the island of Milos, Greece, and what accuracies were achieved?",
+    "ground_truth_answer": "The EnMAP hyperspectral satellite was used for LULC mapping on the island of Milos, Greece. SVM achieved 91% overall accuracy, outperforming Random Forest which achieved 86% overall accuracy. McNemar's test confirmed the statistical significance of the difference.",
+    "source_document": "05_LandSegmenter.pdf",
+    "source_pages": [1, 8, 12],
+    "category": "results"
+  },
+  {
+    "id": 11,
+    "question": "How does hyperspectral data from EnMAP differ from multispectral data for LULC classification?",
+    "ground_truth_answer": "EnMAP hyperspectral satellite provides much higher spectral resolution compared to multispectral sensors like Sentinel-2, enabling finer discrimination of land cover types. In the study on Milos, Greece, SVM proved more effective than RF for hyperspectral classification, achieving 91% vs 86% overall accuracy.",
+    "source_document": "05_LandSegmenter.pdf",
+    "source_pages": [1, 3, 10],
+    "category": "factual"
+  },
+  {
+    "id": 12,
+    "question": "Which deep learning architecture achieved the highest accuracy on satellite image classification benchmarks, and what was its performance?",
+    "ground_truth_answer": "ResNet101 achieved the highest accuracy at 96.33% overall accuracy with F1 score of 98.65% on satellite image classification, trained in 1 minute 18 seconds. ResNet50 achieved 92.86% accuracy with F1 of 96.26%. These were tested on UC-Merced, AID, and NWPU-RESISC45 datasets.",
+    "source_document": "06_LandSegmenter.pdf",
+    "source_pages": [1, 8, 12],
+    "category": "results"
+  },
+  {
+    "id": 13,
+    "question": "What benchmark datasets were used to evaluate deep learning architectures for satellite image classification?",
+    "ground_truth_answer": "Three benchmark datasets were used: UC-Merced, AID, and NWPU-RESISC45. These are standard remote sensing scene classification datasets used to evaluate DL architectures for satellite image classification.",
+    "source_document": "06_LandSegmenter.pdf",
+    "source_pages": [1, 5],
+    "category": "dataset"
+  },
+  {
+    "id": 14,
+    "question": "What was the CNN baseline accuracy compared to ResNet101 for satellite image classification?",
+    "ground_truth_answer": "The CNN baseline achieved 76.16% accuracy, while ResNet101 achieved 96.33% accuracy — a significant improvement of over 20 percentage points. Training was performed on a single NVIDIA A100 GPU.",
+    "source_document": "06_LandSegmenter.pdf",
+    "source_pages": [1, 10, 14],
+    "category": "comparison"
+  },
+  {
+    "id": 15,
+    "question": "What feature selection method was combined with LightGBM for multisensor LULC classification, and what results were achieved?",
+    "ground_truth_answer": "HSIC-Lasso feature selection was combined with LightGBM, achieving F1 score of 0.9655 and overall accuracy of 0.9657 using only 31 features — 84% fewer features than Boruta+RF which used 196 features. Optuna was used for hyperparameter tuning.",
+    "source_document": "07_LandSegmenter.pdf",
+    "source_pages": [1, 10, 15],
+    "category": "results"
+  },
+  {
+    "id": 16,
+    "question": "What explainability technique was used in the optimized ML approach for LULC classification?",
+    "ground_truth_answer": "SHAP (SHapley Additive exPlanations) was used for model interpretability in the explainable optimized ML approach for LULC classification. The study combined Sentinel-1 and Sentinel-2 data with HSIC-Lasso feature selection and LightGBM.",
+    "source_document": "07_LandSegmenter.pdf",
+    "source_pages": [1, 5, 18],
+    "category": "method"
+  },
+  {
+    "id": 17,
+    "question": "How many features did HSIC-Lasso select compared to Boruta+RF for multisensor LULC?",
+    "ground_truth_answer": "HSIC-Lasso selected only 31 features, which is 84% fewer than Boruta+RF which used 196 features. Despite using far fewer features, HSIC-Lasso+LightGBM achieved F1 of 0.9655 and OA of 0.9657.",
+    "source_document": "07_LandSegmenter.pdf",
+    "source_pages": [10, 15],
+    "category": "comparison"
+  },
+  {
+    "id": 18,
+    "question": "What is the Feature-Aware Spectral Vision Transformer (FS-ViT) and what accuracy did it achieve?",
+    "ground_truth_answer": "FS-ViT (Feature-Aware Spectral Vision Transformer) is a deep learning model for LULC classification in the Coonoor region of the Nilgiris, Western Ghats. It achieved overall accuracy of 96.46% to 98.07% with Kappa values greater than 0.93 across multi-temporal data from 2019, 2021, 2023, and 2025.",
+    "source_document": "08_LandSegmenter.pdf",
+    "source_pages": [1, 8, 14],
+    "category": "results"
+  },
+  {
+    "id": 19,
+    "question": "What models were compared with FS-ViT for LULC in the Nilgiris, Western Ghats?",
+    "ground_truth_answer": "FS-ViT was compared with FA-CNN (Feature-Aware CNN), FA-KAN (Feature-Aware KAN), and FA-ExViT (Feature-Aware Explainable Vision Transformer). FS-ViT achieved the best performance with OA of 96.46%-98.07%. XAI (Explainable AI) was used for model interpretability.",
+    "source_document": "08_LandSegmenter.pdf",
+    "source_pages": [1, 5, 10],
+    "category": "comparison"
+  },
+  {
+    "id": 20,
+    "question": "How does feature-aware spectral learning improve temporal consistency in LULC mapping?",
+    "ground_truth_answer": "Feature-aware spectral learning, as implemented in the FS-ViT model, improves temporal consistency by incorporating spectral features that capture land cover characteristics across multiple time periods (2019, 2021, 2023, 2025). The approach achieved consistently high accuracy (96.46%-98.07% OA, Kappa>0.93) across all temporal snapshots in the Coonoor, Nilgiris region.",
+    "source_document": "08_LandSegmenter.pdf",
+    "source_pages": [1, 8, 12],
+    "category": "factual"
+  },
+  {
+    "id": 21,
+    "question": "What semi-supervised deep learning architecture was used for tropical dry forest LULC classification?",
+    "ground_truth_answer": "Y-Net architecture was used, fusing optical and radar data for semi-supervised deep learning LULC classification of tropical dry forest in the Cauca River Valley, Colombia, for the period 2017-2021. It achieved mean overall accuracy of 95.3% and mean IoU of 88.1%.",
+    "source_document": "09_LandSegmenter.pdf",
+    "source_pages": [1, 10, 18],
+    "category": "method"
+  },
+  {
+    "id": 22,
+    "question": "How did Y-Net compare to U-Net and PSPNet for tropical dry forest LULC mapping?",
+    "ground_truth_answer": "Y-Net outperformed both U-Net and PSPNet for tropical dry forest LULC mapping in the Cauca River Valley, Colombia. Y-Net achieved mean OA of 95.3% and mIoU of 88.1%. Notably, Y-Net achieved this with only 60% labeled data through its semi-supervised approach.",
+    "source_document": "09_LandSegmenter.pdf",
+    "source_pages": [1, 15, 22],
+    "category": "comparison"
+  },
+  {
+    "id": 23,
+    "question": "What percentage of labeled data was required by Y-Net for tropical dry forest classification?",
+    "ground_truth_answer": "Y-Net required only 60% labeled data for its semi-supervised learning approach and still achieved mean overall accuracy of 95.3% and mean IoU of 88.1% for tropical dry forest LULC classification in the Cauca River Valley, Colombia.",
+    "source_document": "09_LandSegmenter.pdf",
+    "source_pages": [1, 18],
+    "category": "factual"
+  },
+  {
+    "id": 24,
+    "question": "What is GeoFusion-ChangeNet and what accuracy does it achieve on the SECOND benchmark?",
+    "ground_truth_answer": "GeoFusion-ChangeNet is a model for land cover mapping and change detection that uses an attention-based mechanism with multi-temporal feature fusion. On the SECOND benchmark, it achieved 95% accuracy, 86% IoU, 93% F1 score, and 84% Kappa coefficient.",
+    "source_document": "12_LandSegmenter.pdf",
+    "source_pages": [1, 20, 35],
+    "category": "results"
+  },
+  {
+    "id": 25,
+    "question": "How does GeoFusion-ChangeNet encode features for change detection?",
+    "ground_truth_answer": "GeoFusion-ChangeNet uses an attention-based mechanism combined with multi-temporal feature fusion to encode features for change detection. It processes multi-temporal satellite imagery and fuses features across time steps to detect land cover changes.",
+    "source_document": "12_LandSegmenter.pdf",
+    "source_pages": [1, 15, 25],
+    "category": "method"
+  },
+  {
+    "id": 26,
+    "question": "What were GeoFusion-ChangeNet's cross-dataset results on the LEVIR-CD benchmark?",
+    "ground_truth_answer": "On the LEVIR-CD cross-dataset evaluation, GeoFusion-ChangeNet achieved 93.12% accuracy, 90.61% F1 score, and 82.84% IoU, demonstrating strong generalization capability across different datasets.",
+    "source_document": "12_LandSegmenter.pdf",
+    "source_pages": [30, 40],
+    "category": "results"
+  },
+  {
+    "id": 27,
+    "question": "What Sentinel-2 spectral bands and indices were used for LULC classification in the Western Himalayan study?",
+    "ground_truth_answer": "The Western Himalayan study used Sentinel-2 satellite imagery on Google Earth Engine. The Random Forest classifier leveraged spectral bands and derived vegetation indices from the Sentinel-2 multispectral instrument to classify eight LULC classes across four Indian states.",
+    "source_document": "01_LandSegmenter.pdf",
+    "source_pages": [3, 5, 8],
+    "category": "dataset"
+  },
+  {
+    "id": 28,
+    "question": "What role does Google Earth Engine play in the Western Himalayan LULC classification study?",
+    "ground_truth_answer": "Google Earth Engine (GEE) served as the cloud-based geospatial processing platform for the Western Himalayan LULC study. It was used to process Sentinel-2 satellite imagery and run the Random Forest classifier with 500 trees across the Indian Western Himalayan region covering four states.",
+    "source_document": "01_LandSegmenter.pdf",
+    "source_pages": [1, 3],
+    "category": "factual"
+  },
+  {
+    "id": 29,
+    "question": "Which four Indian states were covered in the Western Himalayan LULC study?",
+    "ground_truth_answer": "The Indian Western Himalayan (IWH) region study covered four states: Uttarakhand, Himachal Pradesh, Jammu and Kashmir, and Ladakh. The study analyzed LULC changes using Random Forest on Sentinel-2 data via Google Earth Engine.",
+    "source_document": "01_LandSegmenter.pdf",
+    "source_pages": [4, 6],
+    "category": "factual"
+  },
+  {
+    "id": 30,
+    "question": "What are the key differences between Random Forest and SVM for LULC classification across the studies?",
+    "ground_truth_answer": "Random Forest generally outperformed SVM for multispectral data — achieving 88.73% vs SVM's 72.73% in the Nepal study. However, for hyperspectral data (EnMAP), SVM outperformed RF with 91% vs 86% accuracy on Milos, Greece. RF was consistently the best performer for Sentinel-2 multispectral data across multiple studies.",
+    "source_document": "03_LandSegmenter.pdf",
+    "source_pages": [1, 10],
+    "category": "comparison"
+  },
+  {
+    "id": 31,
+    "question": "What statistical test was used to compare SVM and Random Forest classification accuracy in the Milos, Greece hyperspectral study?",
+    "ground_truth_answer": "McNemar's test was applied to compare the classification accuracy between SVM and Random Forest on the EnMAP hyperspectral data for Milos, Greece. The test confirmed the statistical significance of the difference, with SVM achieving 91% and RF achieving 86% overall accuracy.",
+    "source_document": "05_LandSegmenter.pdf",
+    "source_pages": [8, 12],
+    "category": "method"
+  },
+  {
+    "id": 32,
+    "question": "What LULC classes were most difficult to discriminate in the Milos, Greece EnMAP classification?",
+    "ground_truth_answer": "In the Milos, Greece EnMAP hyperspectral classification, mineral extraction sites had the lowest F1 score with 88.2% in SVM classification. Natural pastures achieved 93.8%, salt marshes 93%, sclerophyllous vegetation 90.6%, and water bodies 91.7% user accuracy in SVM classification.",
+    "source_document": "05_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "results"
+  },
+  {
+    "id": 33,
+    "question": "What Optuna hyperparameter tuning approach was used in the explainable ML study for LULC?",
+    "ground_truth_answer": "Optuna was used for hyperparameter tuning of the LightGBM classifier in the explainable optimized ML study for multisensor LULC classification. Combined with HSIC-Lasso feature selection, this approach achieved OA of 0.9657 with only 31 features from combined Sentinel-1 and Sentinel-2 data.",
+    "source_document": "07_LandSegmenter.pdf",
+    "source_pages": [1, 8, 12],
+    "category": "method"
+  },
+  {
+    "id": 34,
+    "question": "How did built-up area change in Berhampore, West Bengal, and what prediction model was used for 2033?",
+    "ground_truth_answer": "Built-up area in Berhampore grew from 20.91 sq.km in 2001 to 43.85 sq.km in 2023 — more than doubling. ANN combined with CA-Markov (Cellular Automata-Markov) model was used to predict LULC for the year 2033.",
+    "source_document": "02_LandSegmenter.pdf",
+    "source_pages": [1, 8, 12],
+    "category": "results"
+  },
+  {
+    "id": 35,
+    "question": "What explainability method was used alongside HSIC-Lasso and LightGBM for LULC classification?",
+    "ground_truth_answer": "SHAP (SHapley Additive exPlanations) was used for model interpretability in the explainable optimized ML study. SHAP quantifies the marginal contribution of each feature to the prediction based on game-theoretic attribution values, applied to the LightGBM model with HSIC-Lasso feature selection.",
+    "source_document": "07_LandSegmenter.pdf",
+    "source_pages": [1, 8, 18],
+    "category": "method"
+  },
+  {
+    "id": 36,
+    "question": "What climatic zones exist in the Sankhuwasabha district of Eastern Nepal, and how do they affect LULC?",
+    "ground_truth_answer": "The Sankhuwasabha district has five climatic zones: Alpine (above 4000 m), Sub-Alpine, Temperate, Sub-tropical, and Tropical. These diverse zones in the Arun Valley create complex mountain environments that challenge machine learning-based LULC classification.",
+    "source_document": "03_LandSegmenter.pdf",
+    "source_pages": [4],
+    "category": "factual"
+  },
+  {
+    "id": 37,
+    "question": "How were training and testing samples collected for the Nepal LULC study?",
+    "ground_truth_answer": "Training and testing datasets were identified for different land cover classes. A 30 m x 30 m grid was established across the study area for spatial accuracy assessment. The study compared Random Forest, SVM, ANN, and Parallelepiped classifiers on both Sentinel-2A and Landsat data.",
+    "source_document": "03_LandSegmenter.pdf",
+    "source_pages": [5, 6],
+    "category": "method"
+  },
+  {
+    "id": 38,
+    "question": "What reference dataset was used for validation in the Central India LULC study on GEE?",
+    "ground_truth_answer": "The ESA WorldCover 2020 map was used as the reference dataset in the Central India study. It was clipped to the region of interest and resampled to 30 m resolution for reference data sampling and validation of the RF, CART, SVM, and GBT classifiers.",
+    "source_document": "04_LandSegmenter.pdf",
+    "source_pages": [4],
+    "category": "dataset"
+  },
+  {
+    "id": 39,
+    "question": "What hyperparameters were used for each classifier in the Central India LULC comparison study?",
+    "ground_truth_answer": "In the Central India study: RF used 100 trees with max depth 10; GBT used 100 trees with max depth 1 and learning rate 0.1; SVM was also configured with specific parameters. These classifiers were applied to Sentinel-2 and HLS datasets under 10% and 30% cloud coverage thresholds.",
+    "source_document": "04_LandSegmenter.pdf",
+    "source_pages": [5],
+    "category": "method"
+  },
+  {
+    "id": 40,
+    "question": "How did cloud coverage thresholds affect classification accuracy in the Central India study?",
+    "ground_truth_answer": "The Central India study tested both 10% and 30% cloud coverage thresholds on Sentinel-2 imagery. The highest Kappa values were achieved by RF and SVM on the Sentinel-2 dataset. SVM exhibited a notable decrease in accuracy on the HLS dataset due to multisource data processing challenges.",
+    "source_document": "04_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "results"
+  },
+  {
+    "id": 41,
+    "question": "What geographic and geological characteristics make Milos, Greece a suitable study area for hyperspectral LULC mapping?",
+    "ground_truth_answer": "Milos is the fifth largest island of the Cyclades with an area of 151 square kilometers. It is a cluster of islands together with Kimolos, Polyaigos, and Antimilos. The island's diverse geology and land cover types made it suitable for evaluating EnMAP hyperspectral satellite data for LULC classification.",
+    "source_document": "05_LandSegmenter.pdf",
+    "source_pages": [3],
+    "category": "factual"
+  },
+  {
+    "id": 42,
+    "question": "What kernel functions were evaluated for SVM classification in the Milos hyperspectral study?",
+    "ground_truth_answer": "The Milos study evaluated multiple SVM kernel functions including: Linear kernel k(xi,xj) = xi·xj, Polynomial kernel k(xi,xj) = (γxi·xj + r)^d with γ>0, and Radial Basis Function (RBF) kernel k(xi,xj) = exp(-γ||xi-xj||²). SVM with these kernels achieved 91% overall accuracy on EnMAP hyperspectral data.",
+    "source_document": "05_LandSegmenter.pdf",
+    "source_pages": [4],
+    "category": "method"
+  },
+  {
+    "id": 43,
+    "question": "What is InceptionV3 and how was it used in the satellite image classification benchmark study?",
+    "ground_truth_answer": "InceptionV3 is a pre-trained deep CNN architecture developed by Google in 2015 that builds upon the traditional CNN architecture. It was one of the deep learning models benchmarked alongside ResNet50, ResNet101, and baseline CNN for satellite image classification on UC-Merced, AID, and NWPU-RESISC45 datasets.",
+    "source_document": "06_LandSegmenter.pdf",
+    "source_pages": [6],
+    "category": "factual"
+  },
+  {
+    "id": 44,
+    "question": "How does ResNet50 address the degradation problem in deep neural networks?",
+    "ground_truth_answer": "ResNet50 (Residual Network with 50 layers) was designed by Microsoft in 2015 to address the degradation problem in very deep networks. It uses bottleneck residual blocks with shortcut connections that permit the network to learn residual functions instead of the underlying mapping, enabling training of very deep networks and preventing vanishing gradients.",
+    "source_document": "06_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "factual"
+  },
+  {
+    "id": 45,
+    "question": "What satellite data preprocessing steps were applied to Sentinel-1 SAR data in the Kahramankazan study?",
+    "ground_truth_answer": "For Sentinel-1 SAR data in the Kahramankazan study, only ascending orbits were selected for geometric consistency. Each SAR image was processed to analysis-ready state by ESA and Google, including thermal and border noise correction. A temporal median reducer was applied to construct pseudo-quad-polarimetric composites (HH, HV, VV, VH) for each year to suppress speckle noise.",
+    "source_document": "07_LandSegmenter.pdf",
+    "source_pages": [3, 6],
+    "category": "method"
+  },
+  {
+    "id": 46,
+    "question": "What texture features from GLCM were computed in the explainable ML LULC study?",
+    "ground_truth_answer": "The explainable ML study computed GLCM (Gray Level Co-occurrence Matrix) texture features including: difference variance (DVAR), difference entropy (DENT), information measure of correlation I (IMC1), information measure of correlation II (IMC2), and maximal correlation coefficient. These were among the input features for HSIC-Lasso selection and LightGBM classification.",
+    "source_document": "07_LandSegmenter.pdf",
+    "source_pages": [5],
+    "category": "dataset"
+  },
+  {
+    "id": 47,
+    "question": "What topographic features were derived from the DEM in the Kahramankazan multisensor study?",
+    "ground_truth_answer": "Five fundamental topographic features were derived from the DEM in the Kahramankazan study. The DEM was resampled to 10 m using nearest-neighbor interpolation to ensure spatial compatibility with Sentinel-2 imagery. These topographic features were combined with Sentinel-1 and Sentinel-2 data for the multisensor LULC classification.",
+    "source_document": "07_LandSegmenter.pdf",
+    "source_pages": [4],
+    "category": "dataset"
+  },
+  {
+    "id": 48,
+    "question": "How does the FS-ViT architecture perform pixel-wise LULC classification?",
+    "ground_truth_answer": "FS-ViT uses a transformer architecture that is encoder-only and performs pixel-wise LULC classification with spectral features. It treats spectral bands, indices, and auxiliary features as input, performing feature-aware spectral learning to capture land cover characteristics for temporally consistent multi-temporal LULC mapping.",
+    "source_document": "08_LandSegmenter.pdf",
+    "source_pages": [3, 6],
+    "category": "method"
+  },
+  {
+    "id": 49,
+    "question": "How were the FA-CNN and FA-KAN baseline models evaluated against FS-ViT in terms of spatial quality?",
+    "ground_truth_answer": "FA-CNN maps showed artifacts from misclassification rather than real land-cover change. FA-KAN maps were spatially smoother but urban class boundaries were imprecise at transition zones, with visible over-prediction of urban extent in 2021 and 2023. FS-ViT produced consistent urban class outputs with well-defined class boundaries and minimal noise.",
+    "source_document": "08_LandSegmenter.pdf",
+    "source_pages": [8, 9],
+    "category": "comparison"
+  },
+  {
+    "id": 50,
+    "question": "What cross-validation method was used for spatial accuracy assessment in the FS-ViT study?",
+    "ground_truth_answer": "A polygon-level five-fold cross-validation method (K=5) was used to assess spatial accuracy and temporal consistency in the FS-ViT study. This validation approach was consistent with the quantitative accuracy results outlined in the confusion matrix analyses across the 2019, 2021, 2023, and 2025 temporal datasets.",
+    "source_document": "08_LandSegmenter.pdf",
+    "source_pages": [9],
+    "category": "method"
+  },
+  {
+    "id": 51,
+    "question": "What SAR polarization modes and preprocessing were applied in the Colombian tropical dry forest Y-Net study?",
+    "ground_truth_answer": "In the Colombian Y-Net study, Sentinel-1 SAR data was collected in ascending orbit mode. VV+VH and HH+HV polarizations were processed, with temporal median reduction applied to suppress speckle noise. The SAR data was fused with optical data for semi-supervised LULC classification of tropical dry forest.",
+    "source_document": "09_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "dataset"
+  },
+  {
+    "id": 52,
+    "question": "What challenges does tropical dry forest pose for LULC classification that Y-Net addresses?",
+    "ground_truth_answer": "Tropical dry forest poses challenges for LULC classification because forest classes exhibit spectral overlap with other LULC classes, making them difficult to discriminate. While deep learning and SAR-optical fusion show promise, an integrated approach combining both was needed. Y-Net addresses this through semi-supervised learning requiring only 60% labeled data.",
+    "source_document": "09_LandSegmenter.pdf",
+    "source_pages": [3],
+    "category": "factual"
+  },
+  {
+    "id": 53,
+    "question": "How were PlanetScope images handled in the Colombian tropical dry forest study?",
+    "ground_truth_answer": "In the Colombian tropical dry forest study, a methodological choice was made to standardize the pixel size, which simplified data handling and the creation of image patches (chunks). All references to PlanetScope resolution in the study reflect this standardization approach for the LULC classification workflow.",
+    "source_document": "09_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "dataset"
+  },
+  {
+    "id": 54,
+    "question": "What data splitting ratio was used for training GeoFusion-ChangeNet, and how were inputs prepared?",
+    "ground_truth_answer": "GeoFusion-ChangeNet used a 70:15:15 ratio for training, validation, and testing sets. Input preparation included image resizing, pixel normalization, and histogram matching to ensure multitemporal inputs are homogenous. A sliding window strategy was used to break large satellite images into small patches for deep learning processing.",
+    "source_document": "12_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "method"
+  },
+  {
+    "id": 55,
+    "question": "What loss functions and optimizer were used to train GeoFusion-ChangeNet?",
+    "ground_truth_answer": "GeoFusion-ChangeNet was trained using both Cross-Entropy Loss and Dice Loss functions, which were optimized by the Adam optimizer. The model produces high-resolution land cover maps based on semantic segmentation as well as automated change detection from multi-temporal satellite imagery.",
+    "source_document": "12_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "method"
+  },
+  {
+    "id": 56,
+    "question": "How does the Hierarchical Feature Extraction module work in GeoFusion-ChangeNet?",
+    "ground_truth_answer": "In GeoFusion-ChangeNet, the Hierarchical Feature Extraction module processes image patches through deep feature extraction. It uses an attention-based feature enhancement mechanism to concentrate on significant areas and avoid irrelevant background information. Multi-temporal feature fusion of Image 1 and Image 2 involves concatenation of features for change detection.",
+    "source_document": "12_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "method"
+  },
+  {
+    "id": 57,
+    "question": "What limitations were identified in the Central India GEE-based LULC analysis?",
+    "ground_truth_answer": "The Central India GEE study identified several limitations: the analysis relied on a single reference dataset (ESA WorldCover), which could limit the diversity of ground truth and possibly skew model validation. Furthermore, the analysis only examined one year, which limits the ability to assess temporal LULC dynamics.",
+    "source_document": "04_LandSegmenter.pdf",
+    "source_pages": [9],
+    "category": "factual"
+  },
+  {
+    "id": 58,
+    "question": "What future research directions were suggested for the Berhampore LULC prediction study?",
+    "ground_truth_answer": "The Berhampore study suggested enhancing predictive LULC frameworks by integrating participatory planning methods and community-based data. The study noted that the analysis was based on historical satellite monitoring (2001-2023) and excluded real-time monitoring potentials, and that specific socioeconomic forces like industrialisation and population dynamics were not explicitly included.",
+    "source_document": "02_LandSegmenter.pdf",
+    "source_pages": [8],
+    "category": "factual"
+  },
+  {
+    "id": 59,
+    "question": "How did farmland change in Berhampore between 2001 and 2023 according to the LULC analysis?",
+    "ground_truth_answer": "In Berhampore, farmland over the period 2001 to 2023 developed to 225.41 km² (69.54%). The city was urbanising rapidly at the expense of vegetation cover and water bodies, straining natural landscapes. The 2033 LULC projection indicated further urbanisation with farming land remaining as a ruling class and low forest cover.",
+    "source_document": "02_LandSegmenter.pdf",
+    "source_pages": [6, 8],
+    "category": "results"
+  },
+  {
+    "id": 60,
+    "question": "How does the accuracy assessment methodology work for the classification maps in the Milos Greece study?",
+    "ground_truth_answer": "In the Milos, Greece study, the accuracy of thematic land cover maps from the classification process was assessed using standard accuracy estimation methods. Categories were consolidated based on similarity criteria, which contributed to increasing the area occupied by the resulting categories. Both SVM and RF classifications were evaluated this way.",
+    "source_document": "05_LandSegmenter.pdf",
+    "source_pages": [5, 6],
+    "category": "method"
+  }
+]
