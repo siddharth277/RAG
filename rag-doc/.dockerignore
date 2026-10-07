@@ -1,0 +1,15 @@
+.git
+.gitignore
+.env
+.venv
+venv/
+ENV/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.brain/
+.system_generated/
+*.log
+scratch/

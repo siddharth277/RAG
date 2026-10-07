@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  rag-pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghcr.io/aasthageda/rag_pipeline:latest
+    container_name: rag_pipeline_app
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+      # Add OpenAI API Key here if desired:
+      # - OPENAI_API_KEY=your_key_here
+    volumes:
+      - ./data/documents:/app/data/documents
+      - ./vector_db:/app/vector_db
+    restart: unless-stopped
